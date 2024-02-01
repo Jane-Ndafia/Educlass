@@ -1,7 +1,11 @@
 /*general setup  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,800&display=swap");
       :root {
-        font-family: "Poppins", sans-serif;
+        
+        --hero-bg-color:#EBF2FF;
+        --default-font :"Poppins", sans-serif;
+      --primary-color:#2374EE;
+        
       }
   a{
     text-decoration: none;
@@ -11,7 +15,8 @@
     display: flex;
     justify-content:space-between ;
     align-items: center;
-    padding: 1rem ;
+    padding: 5rem;
+
   }
   .brand{
     display: flex;
@@ -21,4 +26,12 @@
   .logo-text{
     font-weight: 700;
     font-size: 1.5rem;
+  }
+
+  /* Hero styles */
+  .hero__top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:5rem;
+    background-color: var(--hero-bg-color);
   }
